@@ -1,3 +1,12 @@
+Glyphs work! Also added the playstation buttons and made a backup for xbox so u can switch.
+
+Im gonna be honest i have <strong>NO CLUE</strong> what im doing. just used my little coding knowledge from in heighschool to add something.
+
+Games i tested it in: Left 4 Dead 2, Cuphead... That is it...
+
+
+<details>
+<summary>Forked README.md</summary>
 ## :large_orange_diamond: **This is a fork**
 Fork of https://gitlab.com/Mr_Goldberg/goldberg_emulator  
 
@@ -320,3 +329,4 @@ package_linux.sh <build_folder>
 ```
 `build_folder` is any folder inside `build/linux`, for example: `gmake2/release`  
 The above example will create a compressed `.tar` archive inside `build/package/linux/`
+</details>
