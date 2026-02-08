@@ -1,8 +1,8 @@
 Glyphs work! Also added the playstation buttons and made a backup for xbox so u can switch.
 
-Im gonna be honest i have <strong>NO CLUE</strong> what im doing. just used my little coding knowledge from in heighschool to add something.
+Im gonna be honest i have <strong>NO CLUE</strong> what im doing. just used my little coding knowledge from in highschool days to add something.
 
-Games i tested it in: Left 4 Dead 2, Cuphead... That is it...
+Games i tested: Left 4 Dead 2, Cuphead... That is it...
 
 
 <details>
