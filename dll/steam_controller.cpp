@@ -954,14 +954,138 @@ bool Steam_Controller::ShowAnalogActionOrigins( ControllerHandle_t controllerHan
 // Returns a localized string (from Steam's language setting) for the specified origin
 const char* Steam_Controller::GetStringForActionOrigin( EControllerActionOrigin eOrigin )
 {
-    PRINT_DEBUG_TODO();
-    return "Button String";
+  
+    switch(eOrigin) {
+        case k_EControllerActionOrigin_XBox360_A:
+            return "A Button";
+        case k_EControllerActionOrigin_XBox360_B:
+            return "B Button";
+        case k_EControllerActionOrigin_XBox360_X:
+            return "X Button";
+        case k_EControllerActionOrigin_XBox360_Y:
+            return "Y Button";
+        case k_EControllerActionOrigin_XBox360_LeftBumper:
+            return "Left Bumper";
+        case k_EControllerActionOrigin_XBox360_RightBumper:
+            return "Right Bumper";
+        case k_EControllerActionOrigin_XBox360_Start:
+            return "Start";
+        case k_EControllerActionOrigin_XBox360_Back:
+            return "Back";
+        case k_EControllerActionOrigin_XBox360_LeftTrigger_Pull:
+            return "Left Trigger";
+        case k_EControllerActionOrigin_XBox360_LeftTrigger_Click:
+            return "Left Trigger";
+        case k_EControllerActionOrigin_XBox360_RightTrigger_Pull:
+            return "Right Trigger";
+        case k_EControllerActionOrigin_XBox360_RightTrigger_Click:
+            return "Right Trigger";
+        case k_EControllerActionOrigin_XBox360_LeftStick_Move:
+            return "Left Stick";
+        case k_EControllerActionOrigin_XBox360_LeftStick_Click:
+            return "Left Stick Click";
+        case k_EControllerActionOrigin_XBox360_LeftStick_DPadNorth:
+            return "Left Stick Up";
+        case k_EControllerActionOrigin_XBox360_LeftStick_DPadSouth:
+            return "Left Stick Down";
+        case k_EControllerActionOrigin_XBox360_LeftStick_DPadWest:
+            return "Left Stick Left";
+        case k_EControllerActionOrigin_XBox360_LeftStick_DPadEast:
+            return "Left Stick Right";
+        case k_EControllerActionOrigin_XBox360_RightStick_Move:
+            return "Right Stick";
+        case k_EControllerActionOrigin_XBox360_RightStick_Click:
+            return "Right Stick Click";
+        case k_EControllerActionOrigin_XBox360_RightStick_DPadNorth:
+            return "Right Stick Up";
+        case k_EControllerActionOrigin_XBox360_RightStick_DPadSouth:
+            return "Right Stick Down";
+        case k_EControllerActionOrigin_XBox360_RightStick_DPadWest:
+            return "Right Stick Left";
+        case k_EControllerActionOrigin_XBox360_RightStick_DPadEast:
+            return "Right Stick Right";
+        case k_EControllerActionOrigin_XBox360_DPad_North:
+            return "D-Pad Up";
+        case k_EControllerActionOrigin_XBox360_DPad_South:
+            return "D-Pad Down";
+        case k_EControllerActionOrigin_XBox360_DPad_West:
+            return "D-Pad Left";
+        case k_EControllerActionOrigin_XBox360_DPad_East:
+            return "D-Pad Right";
+        case k_EControllerActionOrigin_XBox360_DPad_Move:
+            return "D-Pad";
+        
+        default:
+            return "Unknown Button";
+    }
 }
 
 const char* Steam_Controller::GetStringForActionOrigin( EInputActionOrigin eOrigin )
 {
-    PRINT_DEBUG_TODO();
-    return "Button String";
+
+    switch(eOrigin) {
+        case k_EInputActionOrigin_XBox360_A:
+            return "A Button";
+        case k_EInputActionOrigin_XBox360_B:
+            return "B Button";
+        case k_EInputActionOrigin_XBox360_X:
+            return "X Button";
+        case k_EInputActionOrigin_XBox360_Y:
+            return "Y Button";
+        case k_EInputActionOrigin_XBox360_LeftBumper:
+            return "Left Bumper";
+        case k_EInputActionOrigin_XBox360_RightBumper:
+            return "Right Bumper";
+        case k_EInputActionOrigin_XBox360_Start:
+            return "Start";
+        case k_EInputActionOrigin_XBox360_Back:
+            return "Back";
+        case k_EInputActionOrigin_XBox360_LeftTrigger_Pull:
+            return "Left Trigger";
+        case k_EInputActionOrigin_XBox360_LeftTrigger_Click:
+            return "Left Trigger";
+        case k_EInputActionOrigin_XBox360_RightTrigger_Pull:
+            return "Right Trigger";
+        case k_EInputActionOrigin_XBox360_RightTrigger_Click:
+            return "Right Trigger";
+        case k_EInputActionOrigin_XBox360_LeftStick_Move:
+            return "Left Stick";
+        case k_EInputActionOrigin_XBox360_LeftStick_Click:
+            return "Left Stick Click";
+        case k_EInputActionOrigin_XBox360_LeftStick_DPadNorth:
+            return "Left Stick Up";
+        case k_EInputActionOrigin_XBox360_LeftStick_DPadSouth:
+            return "Left Stick Down";
+        case k_EInputActionOrigin_XBox360_LeftStick_DPadWest:
+            return "Left Stick Left";
+        case k_EInputActionOrigin_XBox360_LeftStick_DPadEast:
+            return "Left Stick Right";
+        case k_EInputActionOrigin_XBox360_RightStick_Move:
+            return "Right Stick";
+        case k_EInputActionOrigin_XBox360_RightStick_Click:
+            return "Right Stick Click";
+        case k_EInputActionOrigin_XBox360_RightStick_DPadNorth:
+            return "Right Stick Up";
+        case k_EInputActionOrigin_XBox360_RightStick_DPadSouth:
+            return "Right Stick Down";
+        case k_EInputActionOrigin_XBox360_RightStick_DPadWest:
+            return "Right Stick Left";
+        case k_EInputActionOrigin_XBox360_RightStick_DPadEast:
+            return "Right Stick Right";
+        case k_EInputActionOrigin_XBox360_DPad_North:
+            return "D-Pad Up";
+        case k_EInputActionOrigin_XBox360_DPad_South:
+            return "D-Pad Down";
+        case k_EInputActionOrigin_XBox360_DPad_West:
+            return "D-Pad Left";
+        case k_EInputActionOrigin_XBox360_DPad_East:
+            return "D-Pad Right";
+        case k_EInputActionOrigin_XBox360_DPad_Move:
+            return "D-Pad";
+        
+        default:
+            return "Unknown Button";
+    }
 }
 
 // Returns a localized string (from Steam's language setting) for the user-facing action name corresponding to the specified handle
@@ -975,86 +1099,146 @@ const char* Steam_Controller::GetStringForAnalogActionName( InputAnalogActionHan
 // Get a local path to art for on-screen glyph for a particular origin 
 const char* Steam_Controller::GetGlyphForActionOrigin( EControllerActionOrigin eOrigin )
 {
-    PRINT_DEBUG("%i", eOrigin);
+    static std::string rel_path;
+    std::string dir = settings->glyphs_directory;
 
-    if (steamcontroller_glyphs.empty()) {
-        std::string dir = settings->glyphs_directory;
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_A] = dir + "button_a.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_B] = dir + "button_b.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_X] = dir + "button_x.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_Y] = dir + "button_y.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftBumper] = dir + "shoulder_l.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightBumper] = dir + "shoulder_r.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_Start] = dir + "xbox_button_start.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_Back] = dir + "xbox_button_select.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftTrigger_Pull] = dir + "trigger_l_pull.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftTrigger_Click] = dir + "trigger_l_click.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightTrigger_Pull] = dir + "trigger_r_pull.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightTrigger_Click] = dir + "trigger_r_click.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_Move] = dir + "stick_l_move.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_Click] = dir + "stick_l_click.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_DPadNorth] = dir + "stick_dpad_n.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_DPadSouth] = dir + "stick_dpad_s.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_DPadWest] = dir + "stick_dpad_w.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_LeftStick_DPadEast] = dir + "stick_dpad_e.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_Move] = dir + "stick_r_move.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_Click] = dir + "stick_r_click.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_DPadNorth] = dir + "stick_dpad_n.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_DPadSouth] = dir + "stick_dpad_s.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_DPadWest] = dir + "stick_dpad_w.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_RightStick_DPadEast] = dir + "stick_dpad_e.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_DPad_North] = dir + "xbox_button_dpad_n.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_DPad_South] = dir + "xbox_button_dpad_s.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_DPad_West] = dir + "xbox_button_dpad_w.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_DPad_East] = dir + "xbox_button_dpad_e.png";
-        steamcontroller_glyphs[k_EControllerActionOrigin_XBox360_DPad_Move] = dir + "xbox_button_dpad_move.png";
+    switch (eOrigin)
+    {
+    case k_EControllerActionOrigin_XBox360_A:
+        rel_path = dir + "button_a.png"; break;
+    case k_EControllerActionOrigin_XBox360_B:
+        rel_path = dir + "button_b.png"; break;
+    case k_EControllerActionOrigin_XBox360_X:
+        rel_path = dir + "button_x.png"; break;
+    case k_EControllerActionOrigin_XBox360_Y:
+        rel_path = dir + "button_y.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftBumper:
+        rel_path = dir + "shoulder_l.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightBumper:
+        rel_path = dir + "shoulder_r.png"; break;
+    case k_EControllerActionOrigin_XBox360_Start:
+        rel_path = dir + "xbox_button_start.png"; break;
+    case k_EControllerActionOrigin_XBox360_Back:
+        rel_path = dir + "xbox_button_select.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftTrigger_Pull:
+        rel_path = dir + "trigger_l_pull.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftTrigger_Click:
+        rel_path = dir + "trigger_l_click.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightTrigger_Pull:
+        rel_path = dir + "trigger_r_pull.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightTrigger_Click:
+        rel_path = dir + "trigger_r_click.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_Move:
+        rel_path = dir + "stick_l_move.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_Click:
+        rel_path = dir + "stick_l_click.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_DPadNorth:
+        rel_path = dir + "stick_dpad_n.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_DPadSouth:
+        rel_path = dir + "stick_dpad_s.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_DPadWest:
+        rel_path = dir + "stick_dpad_w.png"; break;
+    case k_EControllerActionOrigin_XBox360_LeftStick_DPadEast:
+        rel_path = dir + "stick_dpad_e.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_Move:
+        rel_path = dir + "stick_r_move.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_Click:
+        rel_path = dir + "stick_r_click.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_DPadNorth:
+        rel_path = dir + "stick_dpad_n.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_DPadSouth:
+        rel_path = dir + "stick_dpad_s.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_DPadWest:
+        rel_path = dir + "stick_dpad_w.png"; break;
+    case k_EControllerActionOrigin_XBox360_RightStick_DPadEast:
+        rel_path = dir + "stick_dpad_e.png"; break;
+    case k_EControllerActionOrigin_XBox360_DPad_North:
+        rel_path = dir + "xbox_button_dpad_n.png"; break;
+    case k_EControllerActionOrigin_XBox360_DPad_South:
+        rel_path = dir + "xbox_button_dpad_s.png"; break;
+    case k_EControllerActionOrigin_XBox360_DPad_West:
+        rel_path = dir + "xbox_button_dpad_w.png"; break;
+    case k_EControllerActionOrigin_XBox360_DPad_East:
+        rel_path = dir + "xbox_button_dpad_e.png"; break;
+    case k_EControllerActionOrigin_XBox360_DPad_Move:
+        rel_path = dir + "xbox_button_dpad_move.png"; break;
+    default:
+        return "";
     }
 
-    auto glyph = steamcontroller_glyphs.find(eOrigin);
-    if (glyph == steamcontroller_glyphs.end()) return "";
-    return glyph->second.c_str();
+    return rel_path.c_str();
 }
 
 const char* Steam_Controller::GetGlyphForActionOrigin( EInputActionOrigin eOrigin )
 {
-    PRINT_DEBUG("steaminput %i", eOrigin);
-    if (steaminput_glyphs.empty()) {
-        std::string dir = settings->glyphs_directory;
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_A] = dir + "button_a.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_B] = dir + "button_b.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_X] = dir + "button_x.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_Y] = dir + "button_y.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftBumper] = dir + "shoulder_l.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightBumper] = dir + "shoulder_r.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_Start] = dir + "xbox_button_start.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_Back] = dir + "xbox_button_select.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftTrigger_Pull] = dir + "trigger_l_pull.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftTrigger_Click] = dir + "trigger_l_click.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightTrigger_Pull] = dir + "trigger_r_pull.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightTrigger_Click] = dir + "trigger_r_click.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_Move] = dir + "stick_l_move.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_Click] = dir + "stick_l_click.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_DPadNorth] = dir + "stick_dpad_n.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_DPadSouth] = dir + "stick_dpad_s.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_DPadWest] = dir + "stick_dpad_w.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_LeftStick_DPadEast] = dir + "stick_dpad_e.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_Move] = dir + "stick_r_move.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_Click] = dir + "stick_r_click.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_DPadNorth] = dir + "stick_dpad_n.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_DPadSouth] = dir + "stick_dpad_s.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_DPadWest] = dir + "stick_dpad_w.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_RightStick_DPadEast] = dir + "stick_dpad_e.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_DPad_North] = dir + "xbox_button_dpad_n.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_DPad_South] = dir + "xbox_button_dpad_s.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_DPad_West] = dir + "xbox_button_dpad_w.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_DPad_East] = dir + "xbox_button_dpad_e.png";
-        steaminput_glyphs[k_EInputActionOrigin_XBox360_DPad_Move] = dir + "xbox_button_dpad_move.png";
-        //steaminput_glyphs[] = dir + "";
+    static std::string rel_path;
+    std::string dir = settings->glyphs_directory;
+
+    switch (eOrigin)
+    {
+    case k_EInputActionOrigin_XBox360_A:
+        rel_path = dir + "button_a.png"; break;
+    case k_EInputActionOrigin_XBox360_B:
+        rel_path = dir + "button_b.png"; break;
+    case k_EInputActionOrigin_XBox360_X:
+        rel_path = dir + "button_x.png"; break;
+    case k_EInputActionOrigin_XBox360_Y:
+        rel_path = dir + "button_y.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftBumper:
+        rel_path = dir + "shoulder_l.png"; break;
+    case k_EInputActionOrigin_XBox360_RightBumper:
+        rel_path = dir + "shoulder_r.png"; break;
+    case k_EInputActionOrigin_XBox360_Start:
+        rel_path = dir + "xbox_button_start.png"; break;
+    case k_EInputActionOrigin_XBox360_Back:
+        rel_path = dir + "xbox_button_select.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftTrigger_Pull:
+        rel_path = dir + "trigger_l_pull.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftTrigger_Click:
+        rel_path = dir + "trigger_l_click.png"; break;
+    case k_EInputActionOrigin_XBox360_RightTrigger_Pull:
+        rel_path = dir + "trigger_r_pull.png"; break;
+    case k_EInputActionOrigin_XBox360_RightTrigger_Click:
+        rel_path = dir + "trigger_r_click.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_Move:
+        rel_path = dir + "stick_l_move.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_Click:
+        rel_path = dir + "stick_l_click.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_DPadNorth:
+        rel_path = dir + "stick_dpad_n.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_DPadSouth:
+        rel_path = dir + "stick_dpad_s.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_DPadWest:
+        rel_path = dir + "stick_dpad_w.png"; break;
+    case k_EInputActionOrigin_XBox360_LeftStick_DPadEast:
+        rel_path = dir + "stick_dpad_e.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_Move:
+        rel_path = dir + "stick_r_move.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_Click:
+        rel_path = dir + "stick_r_click.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_DPadNorth:
+        rel_path = dir + "stick_dpad_n.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_DPadSouth:
+        rel_path = dir + "stick_dpad_s.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_DPadWest:
+        rel_path = dir + "stick_dpad_w.png"; break;
+    case k_EInputActionOrigin_XBox360_RightStick_DPadEast:
+        rel_path = dir + "stick_dpad_e.png"; break;
+    case k_EInputActionOrigin_XBox360_DPad_North:
+        rel_path = dir + "xbox_button_dpad_n.png"; break;
+    case k_EInputActionOrigin_XBox360_DPad_South:
+        rel_path = dir + "xbox_button_dpad_s.png"; break;
+    case k_EInputActionOrigin_XBox360_DPad_West:
+        rel_path = dir + "xbox_button_dpad_w.png"; break;
+    case k_EInputActionOrigin_XBox360_DPad_East:
+        rel_path = dir + "xbox_button_dpad_e.png"; break;
+    case k_EInputActionOrigin_XBox360_DPad_Move:
+        rel_path = dir + "xbox_button_dpad_move.png"; break;
+    default:
+        return "";
     }
 
-    auto glyph = steaminput_glyphs.find(eOrigin);
-    if (glyph == steaminput_glyphs.end()) return "";
-    return glyph->second.c_str();
+    return rel_path.c_str();
 }
 
 // Get a local path to a PNG file for the provided origin's glyph. 
@@ -1097,20 +1281,79 @@ const char* Steam_Controller::GetStringForXboxOrigin( EXboxOrigin eOrigin )
 
 const char* Steam_Controller::GetGlyphForXboxOrigin( EXboxOrigin eOrigin )
 {
-    PRINT_DEBUG_TODO();
-    return "";
+    EInputActionOrigin actionOrigin = GetActionOriginFromXboxOrigin((InputHandle_t)0, eOrigin);
+    return GetGlyphForActionOrigin(actionOrigin);
 }
 
 EControllerActionOrigin Steam_Controller::GetActionOriginFromXboxOrigin_( ControllerHandle_t controllerHandle, EXboxOrigin eOrigin )
 {
     PRINT_DEBUG_TODO();
-    return k_EControllerActionOrigin_None;
+    switch (eOrigin) {
+    case k_EXboxOrigin_A: return k_EControllerActionOrigin_XBox360_A;
+    case k_EXboxOrigin_B: return k_EControllerActionOrigin_XBox360_B;
+    case k_EXboxOrigin_X: return k_EControllerActionOrigin_XBox360_X;
+    case k_EXboxOrigin_Y: return k_EControllerActionOrigin_XBox360_Y;
+    case k_EXboxOrigin_LeftBumper: return k_EControllerActionOrigin_XBox360_LeftBumper;
+    case k_EXboxOrigin_RightBumper: return k_EControllerActionOrigin_XBox360_RightBumper;
+    case k_EXboxOrigin_Menu: return k_EControllerActionOrigin_XBox360_Start;
+    case k_EXboxOrigin_View: return k_EControllerActionOrigin_XBox360_Back;
+    case k_EXboxOrigin_LeftTrigger_Pull: return k_EControllerActionOrigin_XBox360_LeftTrigger_Pull;
+    case k_EXboxOrigin_LeftTrigger_Click: return k_EControllerActionOrigin_XBox360_LeftTrigger_Click;
+    case k_EXboxOrigin_RightTrigger_Pull: return k_EControllerActionOrigin_XBox360_RightTrigger_Pull;
+    case k_EXboxOrigin_RightTrigger_Click: return k_EControllerActionOrigin_XBox360_RightTrigger_Click;
+    case k_EXboxOrigin_LeftStick_Move: return k_EControllerActionOrigin_XBox360_LeftStick_Move;
+    case k_EXboxOrigin_LeftStick_Click: return k_EControllerActionOrigin_XBox360_LeftStick_Click;
+    case k_EXboxOrigin_LeftStick_DPadNorth: return k_EControllerActionOrigin_XBox360_LeftStick_DPadNorth;
+    case k_EXboxOrigin_LeftStick_DPadSouth: return k_EControllerActionOrigin_XBox360_LeftStick_DPadSouth;
+    case k_EXboxOrigin_LeftStick_DPadWest: return k_EControllerActionOrigin_XBox360_LeftStick_DPadWest;
+    case k_EXboxOrigin_LeftStick_DPadEast: return k_EControllerActionOrigin_XBox360_LeftStick_DPadEast;
+    case k_EXboxOrigin_RightStick_Move: return k_EControllerActionOrigin_XBox360_RightStick_Move;
+    case k_EXboxOrigin_RightStick_Click: return k_EControllerActionOrigin_XBox360_RightStick_Click;
+    case k_EXboxOrigin_RightStick_DPadNorth: return k_EControllerActionOrigin_XBox360_RightStick_DPadNorth;
+    case k_EXboxOrigin_RightStick_DPadSouth: return k_EControllerActionOrigin_XBox360_RightStick_DPadSouth;
+    case k_EXboxOrigin_RightStick_DPadWest: return k_EControllerActionOrigin_XBox360_RightStick_DPadWest;
+    case k_EXboxOrigin_RightStick_DPadEast: return k_EControllerActionOrigin_XBox360_RightStick_DPadEast;
+    case k_EXboxOrigin_DPad_North: return k_EControllerActionOrigin_XBox360_DPad_North;
+    case k_EXboxOrigin_DPad_South: return k_EControllerActionOrigin_XBox360_DPad_South;
+    case k_EXboxOrigin_DPad_West: return k_EControllerActionOrigin_XBox360_DPad_West;
+    case k_EXboxOrigin_DPad_East: return k_EControllerActionOrigin_XBox360_DPad_East;
+    default: return k_EControllerActionOrigin_None;
+    }
 }
 
 EInputActionOrigin Steam_Controller::GetActionOriginFromXboxOrigin( InputHandle_t inputHandle, EXboxOrigin eOrigin )
 {
-    PRINT_DEBUG_TODO();
-    return k_EInputActionOrigin_None;
+    switch (eOrigin) {
+    case k_EXboxOrigin_A: return k_EInputActionOrigin_XBox360_A;
+    case k_EXboxOrigin_B: return k_EInputActionOrigin_XBox360_B;
+    case k_EXboxOrigin_X: return k_EInputActionOrigin_XBox360_X;
+    case k_EXboxOrigin_Y: return k_EInputActionOrigin_XBox360_Y;
+    case k_EXboxOrigin_LeftBumper: return k_EInputActionOrigin_XBox360_LeftBumper;
+    case k_EXboxOrigin_RightBumper: return k_EInputActionOrigin_XBox360_RightBumper;
+    case k_EXboxOrigin_Menu: return k_EInputActionOrigin_XBox360_Start;
+    case k_EXboxOrigin_View: return k_EInputActionOrigin_XBox360_Back;
+    case k_EXboxOrigin_LeftTrigger_Pull: return k_EInputActionOrigin_XBox360_LeftTrigger_Pull;
+    case k_EXboxOrigin_LeftTrigger_Click: return k_EInputActionOrigin_XBox360_LeftTrigger_Click;
+    case k_EXboxOrigin_RightTrigger_Pull: return k_EInputActionOrigin_XBox360_RightTrigger_Pull;
+    case k_EXboxOrigin_RightTrigger_Click: return k_EInputActionOrigin_XBox360_RightTrigger_Click;
+    case k_EXboxOrigin_LeftStick_Move: return k_EInputActionOrigin_XBox360_LeftStick_Move;
+    case k_EXboxOrigin_LeftStick_Click: return k_EInputActionOrigin_XBox360_LeftStick_Click;
+    case k_EXboxOrigin_LeftStick_DPadNorth: return k_EInputActionOrigin_XBox360_LeftStick_DPadNorth;
+    case k_EXboxOrigin_LeftStick_DPadSouth: return k_EInputActionOrigin_XBox360_LeftStick_DPadSouth;
+    case k_EXboxOrigin_LeftStick_DPadWest: return k_EInputActionOrigin_XBox360_LeftStick_DPadWest;
+    case k_EXboxOrigin_LeftStick_DPadEast: return k_EInputActionOrigin_XBox360_LeftStick_DPadEast;
+    case k_EXboxOrigin_RightStick_Move: return k_EInputActionOrigin_XBox360_RightStick_Move;
+    case k_EXboxOrigin_RightStick_Click: return k_EInputActionOrigin_XBox360_RightStick_Click;
+    case k_EXboxOrigin_RightStick_DPadNorth: return k_EInputActionOrigin_XBox360_RightStick_DPadNorth;
+    case k_EXboxOrigin_RightStick_DPadSouth: return k_EInputActionOrigin_XBox360_RightStick_DPadSouth;
+    case k_EXboxOrigin_RightStick_DPadWest: return k_EInputActionOrigin_XBox360_RightStick_DPadWest;
+    case k_EXboxOrigin_RightStick_DPadEast: return k_EInputActionOrigin_XBox360_RightStick_DPadEast;
+    case k_EXboxOrigin_DPad_North: return k_EInputActionOrigin_XBox360_DPad_North;
+    case k_EXboxOrigin_DPad_South: return k_EInputActionOrigin_XBox360_DPad_South;
+    case k_EXboxOrigin_DPad_West: return k_EInputActionOrigin_XBox360_DPad_West;
+    case k_EXboxOrigin_DPad_East: return k_EInputActionOrigin_XBox360_DPad_East;
+    default: return k_EInputActionOrigin_None;
+    }
 }
 
 EControllerActionOrigin Steam_Controller::TranslateActionOrigin( ESteamInputType eDestinationInputType, EControllerActionOrigin eSourceOrigin )

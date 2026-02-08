@@ -87,6 +87,8 @@ Settings::Settings(CSteamID steam_id, CGameID game_id, const std::string &name, 
     this->language = lang;
 
     this->offline = offline;
+
+    this->glyphs_directory = "steam_settings\\controller\\glyphs\\";
 }
 
 // user id
